@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body> 
+  <form action>
+<table id=customers>
+  <tr>
+   
+    <th>PROID</th>
+    <th>PRICE</th>
+    <th>SIZE</th>
+    <th>QUANTITY</th>
+  </tr>
+  {% for item in items %}
+  <tr>
+    <td>{{item.proid}}</td>
+    <td>{{item.price}}</td>
+    <td>{{item.size}}</td>
+    <td>{{item.quantity}}</td>
+    <td><a href="/del/{{item.proid}}">DELETE</a></td>
+    <td><a href="/change/{{item.proid}}">WANT TO CHANGE QUANTITY</a></td>
+  </tr><tr></tr>
+ {% endfor %}
+</table>
+</form>
+<center>
+  <br>
+  <br>
+<a class="btn btn-outline-success" href="/buy">BUY NOW</a>
+<br>
+<br>
+</center>
+</body>
+</html>

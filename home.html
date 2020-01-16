@@ -1,0 +1,258 @@
+<html>
+    <head>
+<title>Online Fashion Hub</title>
+        
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+ 
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
+        
+        <style>
+            .logout{
+                margin-top: -2%;
+                margin-left: 90%;
+                position: absolute;
+            }
+            .contact{
+                margin-top: -2%;
+                margin-left: 84%;
+                position: absolute;
+            }
+            .contact:hover{
+                color:aqua;
+                position: absolute;
+            }
+            .aboutus{
+                margin-top: -2%;
+                margin-left: 78%;
+               
+                position: absolute;
+            }
+        .fixed-top{
+        background-color: black;
+            opacity: 90%;
+            color: whitesmoke;
+            padding-left: 30px;
+            padding-top: 10px;
+            height: 45px;
+            }
+            
+            .home{
+                cursor: pointer;
+                
+            }
+           .carousel inner{
+                padding-top: 100%;
+                padding-left: 100px;
+            }
+           
+            .dropdown{
+                margin-left: 40px;
+                margin-top: -30px;
+               
+                
+            }
+            
+            
+            .search-container {
+            float: right;
+}
+
+ input[type=text] {
+  padding: 6px;
+  margin-top: -37px;
+     margin-right: 20px;
+  font-size: 17px;
+  border: none;
+     cursor: pointer;
+     padding-right: 220px;
+    border-radius:40px;
+     padding-top:11px;
+     padding-bottom: 5px;
+     position: relative;
+}
+
+ .search-container button {
+  float: right;
+  padding-left: 6px ;
+     padding-top: 10px;
+     padding-bottom: 8px;
+  margin-top: -35px;
+  margin-right:550px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+     position: relative;
+}
+              
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+            
+             .w3-quarter:hover {
+  transform: scale(1.2); 
+  transform: scale(1.2); 
+  transform: scale(1.2); 
+}  
+            
+            
+          .w3-quarter{
+             margin-top: 90px;
+             padding-top: 30px;
+         }
+            
+            
+            h2{
+                background-color: aqua
+            }
+                  #cart{
+            margin-left: 94%;
+            margin-top: -33px;
+            position: absolute;
+            
+        }
+            
+        </style>
+      </head>
+    <body>
+        <div class="fixed-top"><a href="/home"><i class="w3-xlarge" ><i class="fa fa-home"></i></i></a>  
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clothings</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/mens">Men's Clothings</a>
+            <a class="dropdown-item" href="/womens">Women's Clothings</a> 
+            <a class="dropdown-item" href="/kids">Kids Clothings</a> </div>
+          </div> 
+            
+            <div class=aboutus>
+                <a href="aboutus" >About us</a> </div>
+        <div class="contact">
+            <a href="/contact">Contact</a></div>
+        <div class="logout">
+            <a href="/logout" >Logout</a></div>
+         <a href="/add"> <i class="fa fa-shopping-cart" id="cart" style="font-size:30px"></i></a></div>
+        
+       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src=/static/mahic.jpg class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src=/static/women2.jpg class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src=/static/womens.jpg class="d-block w-100" alt="...">
+    </div>
+      
+       <div class="carousel-item">
+      <img src=/static/kids.jpeg class="d-block w-100" alt="...">
+    </div>
+      
+        <div class="carousel-item">
+      <img src=/static/vc1.jpg class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src=/static/vc.jpg class="d-block w-100" alt="...">
+    </div>
+           </div>           
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span> </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span></a>
+</div>
+        
+          
+          <h2><marquee direction="left"><span style="HERE ITS FOR YOU">THE WEDDING COLLECTION</span></marquee> </h2>
+        <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+     <a href="/MANAYAVAR"> <img src="/static/wedmen1.jpg" alt="MANAYAVAR" style="width:75%">
+      <h3>MANAYAVAR</h3>
+      <p>ROYAL PURPLE KURTHA PYJAMA</p>
+         <p style="color:red;font-size:25px;">₹5599</p></a>
+    </div>
+    <div class="w3-quarter">
+     <a href="/MANAYAVAR2"> <img src="/static/suit1.jpeg" alt="Salmon" style="width:75%">
+      <h3>MANAYAVAR</h3>
+      <p>ROYAL PURPLE SAREE</p>
+         <p style="color:red;font-size:25px;">₹4999</p></a>
+    </div>
+    <div class="w3-quarter">
+     <a href="/MANAYAVAR3"> <img src="/static/wedmen2.jpg" alt="Sandwich" style="width:75%">
+      <h3>MANAYAVAR</h3>
+      <p>BLUE  KURTHA PYJAMA WEAR</p>
+         <p style="color:red;font-size:25px;">₹6199</p></a>
+    </div>
+    <div class="w3-quarter">
+     <a href="/KANCHIPURAMSILKS"> <img src="/static/lehanga.jpg" alt="Croissant" style="width:75%">
+      <h3>Moderzia kapda</h3>
+      <p>Fashion dress</p>
+         <p style="color:red;font-size:25px;">₹6799</p></a>
+    </div>
+  </div>
+        
+        
+        
+        
+         <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+     <a href="/INDIAFABINDIA2"> <img src= "/static/lehanga1.jpg"alt="Popsicle" style="width:75%">
+      <h3>MOdernzia kapda</h3>
+      <p>Fashion dress2</p>
+         <p style="color:red;font-size:25px;">₹3499</p></a>
+    </div>
+    <div class="w3-quarter">
+     <a href="/MANAYAVAR4"> <img src="/static/SHERWANI.jpg" alt="Salmon" style="width:75%">
+      <h3>MANAYAVAR</h3>
+      <p>WEDDING SHERWANI</p>
+         <p style="color:red;font-size:25px;">₹5899</p></a>
+    </div>
+    <div class="w3-quarter">
+     <a href="/UNIQLO4"> <img src="/static/l.jpeg" alt="Sandwich" style="width:75%">
+      <h3>UNIQLO</h3>
+      <p>RED KURTI</p>
+         <p style="color:red;font-size:25px;">₹4499</p></a>
+    </div>
+    <div class="w3-quarter">
+     <a href="/MANAYAVAR5"> <img src="/static/SHERWANI2.jpg" alt="Croissant" style="width:75%">
+      <h3>MANAYAVAR</h3>
+      <p>SHERWANI</p>
+         <p style="color:red;font-size:25px;">₹2999</p></a>
+    </div>
+  </div>
+        <script>$('.dropdown-toggle').dropdown()
+        
+    </script>
+       
+      
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

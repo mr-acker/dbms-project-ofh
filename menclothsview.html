@@ -1,0 +1,237 @@
+
+<html>
+<head>
+    <title>Product view</title>
+        
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+<style>
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+ <style>
+            .size{
+        margin-left: 65%;
+      
+        }
+     
+      .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+      .container input:checked ~ .checkmark:after {
+  display: block;
+}
+      .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+      .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+      
+      .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+    
+        .fixed-top{
+        background-color: black;
+            opacity: 90%;
+            color: whitesmoke;
+            padding-left: 30px;
+            padding-top: 10px;
+            height: 45px;
+            }
+            
+            .home{
+                cursor: pointer;
+                
+      }
+    img{
+    padding-left: 40px;
+    padding-top: 40px;
+        margin-top: 40px;}
+      
+      
+      
+      p{ margin-left: 67%;
+        }
+    
+    h3{
+      margin-left: 55%;
+        margin-top:-40%;
+      }
+    h4{  
+        margin-left:62%
+      }
+      h6{margin-left:65%}
+      
+      #S{
+          padding-left: 10px;
+          margin-left:65%;
+          cursor: pointer;
+          position:absolute;
+      }
+        #m{
+          padding-left: 10px;
+          margin-left:69%;
+          cursor: pointer;
+          position:absolute;
+      }
+        #l{
+          padding-left: 10px;
+          margin-left:73%;
+          cursor: pointer;
+          position:absolute;
+      }
+        #xl{
+          padding-left: 10px;
+          margin-left:66%;
+          cursor: pointer;
+          position:absolute;
+      }
+       #xxl{
+          padding-left: 10px;
+          margin-left:71%;
+          cursor: pointer;
+          position:absolute;
+      }
+      form{
+          margin-left:65%;
+          position: absolute;
+          margin-top:5%;
+      }
+      
+      #buynow{
+          margin-left: 68%;
+          margin-top: 9%;
+          position: absolute;
+      }
+      #rat{
+        margin-left: 66%;
+      }
+      #link{
+          position: absolute;
+      }
+      .checked {
+  color: orange;
+}
+ 
+    </style>
+
+</head>
+<body>
+     
+           
+    
+
+ <form action="/book" method="post">
+
+
+<div class="img-magnifier-container">
+  <img id="myimage" src="img/mensclothing/kohilic.jpg" width="450" height="600">
+</div>
+    <h3 style="font-size: 30"><b><a id="link" href="menclothsview.html">Jack and Jhons White Shirt</a></b></h3><br>
+     <h4 class="align" style="font-size: 25">Mens casual shirt</h4>
+    <input type="hidden" name="proid" value="1111"> <h6>product id:<b>1111</b></h6>
+    <h4>product ratings</h4>
+<span id=rat class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+   <a href=menclothsview.html> <p style="color:red;font-size:25px;"><input type="hidden" name="price" value="₹799">₹799</p></a>
+    
+    <p style="font-size: 20px;">SIZE</p>
+
+ <div class="size">
+<label class="container">S
+  <input type="radio" checked="checked" name="radio"  id="S" value="{{result}" >
+  <span class="checkmark"></span>
+</label>
+<label class="container">M
+  <input type="radio" name="radio"  id="M" value="{{result}">
+  <span class="checkmark"></span>
+</label>
+<label class="container">L
+  <input type="radio" name="radio"  id="L" value="{{result}">
+  <span class="checkmark"></span>
+</label>
+<label class="container">XL
+  <input type="radio" name="radio"  id="XL" value="{{result}">
+  <span class="checkmark"></span>
+</label>
+</div>
+    
+    
+    
+    
+  
+  Quantity: <input type="number" name="quantity" min="1"  value=1 max="10" required>
+    
+    
+    <button type="button"  id=buynow class="btn btn-outline-warning" >Add to cart</button>
+</form>
+    
+    
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+ 
+<html>
+<head>
+    <title>login_page</title>
+    
+    <style>
+    
+        .uname{
+            
+            
+            background-size:cover;
+              position: relative;
+          
+            padding-top: 100px;
+            background-position: center;
+            height: 290px;
+            
+            
+            }
+        .btn{
+            width: 120px;
+            padding: 5px 10px;
+            height: 25px;
+            backface-visibility: hidden;
+            background-color: mistyrose;
+            }
+        p{
+            font-size: 25px;
+        }
+      
+            .dsn{
+                position: absolute;
+                left: 400;
+                margin: 20px;
+                max-width: 600px;
+                padding: 16px;
+                background-color: white;
+                height: 300px;
+                
+                
+            }
+            .size{
+              font-size: 20px;
+            }
+        input[type=text]:hover, input[type=password]:hover {
+        
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+         border: none;
+         background:whitesmoke;
+            
+         }
+        form{
+            width: 440px;
+            align-content: center;
+             
+        }
+
+        body{
+            background-color:royalblue;
+        }
+         </style>
+    </head>
+
+<body>
+<center>
+
+ <div  class="uname">
+    <center>
+     <form  action="/admin"  class="dsn" method="POST">
+         <p><span title="login form">ADMIN LOGIN</span></p>
+    <input type="text" name="username" placeholder="Enter Username"  required>
+    <br><br>
+    <input type="password"  placeholder="Enter Password"  id="psw" name="password"  required>
+    
+    <br><br>
+         <button class="btn" type="submit" > <span title="click here to login">Login</span></button>
+       </form></center>
+    </div>
+         
+   
+    </center>
+    </body>
+  
+</html>
